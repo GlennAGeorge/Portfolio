@@ -1,0 +1,49 @@
+.loading {
+	position: absolute;
+	left: 45%;
+	top: 50%;
+	color: black;
+	font-size: 30px;
+	font-family: "Press Start 2P", cursive;
+}
+.loading:before {
+	content: "";
+	animation: load 3s linear;
+}
+@keyframes load {
+	0% {
+		content: "Coding";
+	}
+	25% {
+		content: "Coding.";
+	}
+	75% {
+		content: "Coding..";
+	}
+	100% {
+		content: "Coding...";
+	}
+}
+
+nav {
+	display: block;
+	background-color: black;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	float: right;
+	padding: 8px;
+	margin-top: 15px;
+	color: white;
+	font-size: 16px;
+	font-family: "Press Start 2P", cursive;
+}
+
+li a {
+	display: block;
+	padding: 8px;
+}
