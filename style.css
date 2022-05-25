@@ -28,6 +28,10 @@
 		content: "Coding...";
 	}
  }
+#contents {
+    display: none;
+    text-align: center;
+  }
 .nav-list {
     background: black;
     margin: 0;
