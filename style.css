@@ -1,12 +1,16 @@
-.loading {
-	position: absolute;
-	left: 45%;
-	top: 50%;
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
 	color: black;
 	font-size: 30px;
 	font-family: "Press Start 2P", cursive;
 }
-.loading:before {
+.loader:before {
 	content: "";
 	animation: load 3s linear;
 }
@@ -23,27 +27,61 @@
 	100% {
 		content: "Coding...";
 	}
+ }
+.nav-list {
+    background: black;
+    margin: 0;
+    padding: 1rem 0;
+display: flex;
+justify-content: flex-end;
+align-items: center;
 }
 
-nav {
-	display: block;
-	background-color: black;
+.nav-item {
+    list-style: none;
+    margin-right: 2rem
+}
+.nav-item a {
+    text-decoration: none;
+    color: #FAF9F6;
+    font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif; 
+}
+.nav-item:first-child {
+   margin-right: auto;
+    margin-left: 2rem;
+}
+.nav-item a:hover {
+    color: #5FAD56;
 }
 
-ul {
-	list-style: none;
-}
-
-li {
-	float: right;
-	padding: 8px;
-	margin-top: 15px;
-	color: white;
-	font-size: 16px;
-	font-family: "Press Start 2P", cursive;
-}
-
-li a {
-	display: block;
-	padding: 8px;
-}
+#myBtn {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    z-index: 1; 
+    border: none; 
+    outline: none; 
+    background-color: black;
+    color: white; 
+    cursor: pointer; 
+    border-radius: 10px; 
+    font-size: 30px; 
+  }
+  #myBtn:hover {
+    color: #5FAD56;
+  }
+  footer {
+      background-color: black;
+      text-align: center;
+      font-size: 1rem;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+  }
+/* 
+5FAD56 - green
+F2C14E - yellow
+F78154 - organe
+4D9078 - emerald
+B4436C - purple */
